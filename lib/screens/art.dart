@@ -19,7 +19,29 @@ class ArtScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Let Art say'),
+        titleSpacing: 0,
+        title: Wrap(
+          direction: Axis.horizontal,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            BackButton(
+              onPressed: () {
+                // Navigator.of(context).pop();
+              },
+            ),
+            const Text('Let Art say'),
+          ],
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.share),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.favorite_border),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),

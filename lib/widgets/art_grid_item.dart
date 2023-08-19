@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:meals/models/art.dart';
 
@@ -28,21 +30,25 @@ class ArtGridItem extends StatelessWidget {
           Expanded(
             child: Text(
               art.description ?? '',
-              style: Theme.of(context).textTheme.titleSmall!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onBackground,
                     overflow: TextOverflow.fade,
                   ),
             ),
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('24'),
-                    Icon(Icons.arrow_upward_rounded),
+                    Text(
+                      Random().nextInt(999).toString(),
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onBackground),
+                    ),
+                    const Icon(Icons.arrow_upward_rounded),
                   ],
                 ),
               ),
@@ -50,8 +56,12 @@ class ArtGridItem extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text('500'),
-                    Icon(Icons.chat_rounded),
+                    Text(
+                      Random().nextInt(999).toString(),
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onBackground),
+                    ),
+                    const Icon(Icons.chat_rounded),
                   ],
                 ),
               )

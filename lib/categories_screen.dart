@@ -10,11 +10,13 @@ class CategoriesScreen extends StatelessWidget {
         title: const Text('Pick a Category'),
       ),
       body: Container(
-        margin: const EdgeInsets.all(2),
+        margin: const EdgeInsets.all(8),
         child: Center(
           child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
+              crossAxisSpacing: 8,
+              mainAxisSpacing: 8,
             ),
             itemCount: 24,
             itemBuilder: (ctx, i) => Card(

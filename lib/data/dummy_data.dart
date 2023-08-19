@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meals/models/arts/art.dart';
 import 'package:meals/models/comment.dart';
 
-const postedArts = [
+final postedArts = [
   Art(
     id: 'a1',
     poster: 'ssela98',
@@ -201,7 +201,7 @@ const postedArts = [
   ),
 ];
 
-const postedComments = [
+final postedComments = [
   Comment(
     id: 'c1',
     artId: 'a1',

@@ -8,7 +8,7 @@ enum Category {
 }
 
 class Art {
-  const Art({
+  Art({
     required this.id,
     required this.poster,
     required this.title,
@@ -17,7 +17,6 @@ class Art {
     this.description,
     this.category,
     this.color = Colors.orange,
-    // createdAt
   });
 
   final String id;
@@ -28,5 +27,5 @@ class Art {
   final String? description;
   final Category? category;
   final Color color;
-  // createdAt
+  final DateTime timestamp = DateTime.now();
 }

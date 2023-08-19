@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:meals/data/dummy_data.dart';
 import 'package:meals/models/arts/art.dart';
 
 class ArtGridItem extends StatelessWidget {
@@ -65,7 +66,10 @@ class ArtGridItem extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        Random().nextInt(999).toString(),
+                        postedComments
+                            .where((comment) => comment.artId == art.id)
+                            .length
+                            .toString(),
                         style: TextStyle(
                             color: Theme.of(context).colorScheme.onBackground),
                       ),

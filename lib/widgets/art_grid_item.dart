@@ -5,15 +5,18 @@ import 'package:meals/data/dummy_data.dart';
 import 'package:meals/models/arts/art.dart';
 
 class ArtGridItem extends StatelessWidget {
-  ArtGridItem(this.art, {super.key});
+  ArtGridItem(this.art, this.onArtTap, {super.key});
 
   final Art art;
+  final void Function(BuildContext context, Art art) onArtTap;
   final BorderRadius borderRadius = BorderRadius.circular(6);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {}, // open art
+      onTap: () {
+        onArtTap(context, art);
+      }, // open art
       onDoubleTap: () {}, // like art
       splashColor: Theme.of(context).primaryColor,
       borderRadius: borderRadius,

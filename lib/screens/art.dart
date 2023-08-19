@@ -19,19 +19,7 @@ class ArtScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        titleSpacing: 0,
-        title: Wrap(
-          direction: Axis.horizontal,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            BackButton(
-              onPressed: () {
-                // Navigator.of(context).pop();
-              },
-            ),
-            const Text('Let Art say'),
-          ],
-        ),
+        title: const Text('Let Art say'),
         actions: [
           IconButton(
             icon: const Icon(Icons.share),
@@ -70,13 +58,17 @@ class ArtScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineLarge,
             ),
           ]),
+          if (art.description != null)
+            Container(
+              margin: const EdgeInsets.only(top: 24),
+              child: Text(art.description!),
+            ),
           Container(
-            margin: const EdgeInsets.only(top: 24, bottom: 8),
-            child: Text(art.description ?? ''),
-          ),
-          Text(
-            'said @${art.poster} at ${dateFormatter.format(art.timestamp)}',
-            style: Theme.of(context).textTheme.headlineSmall,
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            child: Text(
+              'said @${art.poster} at ${dateFormatter.format(art.timestamp)}',
+              style: Theme.of(context).textTheme.headlineSmall,
+            ),
           ),
           Container(
             margin: const EdgeInsets.only(top: 32, bottom: 24),

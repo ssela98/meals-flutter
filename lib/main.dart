@@ -2,7 +2,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:meals/data/dummy_data.dart';
 import 'package:meals/models/arts/art.dart';
-import 'package:meals/screens/art.dart';
 import 'package:meals/screens/arts.dart';
 
 final theme = ThemeData(
@@ -54,14 +53,7 @@ class App extends StatelessWidget {
               ),
         ),
       ),
-      home: ArtScreen(
-        art: postedArts[0],
-        comments: postedComments
-            .where(
-              (comment) => comment.artId == postedArts[0].id,
-            )
-            .toList(),
-      ), // ArtsScreen(postedArts),
+      home: ArtsScreen(postedArts),
     );
   }
 }

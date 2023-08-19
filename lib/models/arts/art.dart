@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:meals/models/arts/enums/category.dart';
+
+enum Category {
+  painting,
+  sculpture,
+  statue,
+  photography,
+}
 
 class Art {
   const Art({
@@ -11,6 +17,7 @@ class Art {
     this.description,
     this.category,
     this.color = Colors.orange,
+    // createdAt
   });
 
   final String id;
@@ -19,6 +26,7 @@ class Art {
   final String location;
   final String artist;
   final String? description;
-  final ArtCategory? category;
+  final Category? category;
   final Color color;
+  // createdAt
 }

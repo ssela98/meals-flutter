@@ -22,7 +22,7 @@ class ArtScreen extends StatelessWidget {
         title: const Text('Let Art say'),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16),
         children: [
           ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 300),

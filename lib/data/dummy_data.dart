@@ -206,7 +206,8 @@ final postedComments = [
     id: 'c1',
     artId: 'a1',
     poster: 'ssela05',
-    body: 'Oh yeah!',
+    body:
+        'Oh yeah is this not a wonderful art piece! I would love to visit it in person one day as well, unfortunately the weather did not allow for the flight to take off but I promised myself to come back regardless of the impediments next time! See you soon, dear Klimt!!',
   ),
   Comment(
       id: 'c2',

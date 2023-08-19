@@ -66,13 +66,22 @@ class ArtScreen extends StatelessWidget {
           ...comments.isEmpty
               ? [const Text('No comments yet')]
               : comments.map((comment) {
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(comment.body),
-                      Text(
-                          'said @${comment.poster} at ${dateFormatter.format(comment.timestamp)}'),
-                    ],
+                  return Card(
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                              margin: const EdgeInsets.only(bottom: 8),
+                              child: Text(comment.body)),
+                          Text(
+                            'said @${comment.poster} at ${dateFormatter.format(comment.timestamp)}',
+                            style: Theme.of(context).textTheme.headlineSmall,
+                          ),
+                        ],
+                      ),
+                    ),
                   );
                 }).toList(),
         ],

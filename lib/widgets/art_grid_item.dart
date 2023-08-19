@@ -21,11 +21,43 @@ class ArtGridItem extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(8),
       ),
-      child: Text(
-        art.title,
-        style: Theme.of(context).textTheme.titleMedium!.copyWith(
-              color: Theme.of(context).colorScheme.onBackground,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Text(
+              art.description ?? '',
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                    color: Theme.of(context).colorScheme.onBackground,
+                    overflow: TextOverflow.fade,
+                  ),
             ),
+          ),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text('24'),
+                    Icon(Icons.arrow_upward_rounded),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text('500'),
+                    Icon(Icons.chat_rounded),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ],
       ),
     );
   }

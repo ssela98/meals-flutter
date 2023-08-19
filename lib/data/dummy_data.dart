@@ -65,8 +65,6 @@ const postedArts = [
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
     artist: 'Gustav Klimt',
-    description:
-        'The Kiss (German: Der Kuss) is an oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt. It was painted at some point in 1907 and 1908, during the height of what scholars call his "Golden Period". It was exhibited in 1908 under the title Liebespaar (the lovers) as stated in the catalogue of the exhibition.',
     color: Colors.amber,
   ),
   Art(
@@ -151,7 +149,6 @@ const postedArts = [
     title: 'my artwork',
     location: 'somewhere in, 1010 Vienna, Austria',
     artist: 'me',
-    description: 'I made this',
     color: Colors.pink,
   ),
   Art(
@@ -160,8 +157,6 @@ const postedArts = [
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
     artist: 'Gustav Klimt',
-    description:
-        'The Kiss (German: Der Kuss) is an oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt. It was painted at some point in 1907 and 1908, during the height of what scholars call his "Golden Period". It was exhibited in 1908 under the title Liebespaar (the lovers) as stated in the catalogue of the exhibition.',
     color: Colors.amber,
   ),
   Art(
@@ -180,8 +175,6 @@ const postedArts = [
     location:
         'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
     artist: 'Pieter Bruegel the Elder',
-    description:
-        'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
     color: Colors.blueGrey,
   ),
 ];

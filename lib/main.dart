@@ -13,7 +13,7 @@ final theme = ThemeData(
   textTheme: GoogleFonts.latoTextTheme(),
 );
 
-final List<Art> arts = postedArts;
+const List<Art> arts = postedArts;
 
 void main() {
   runApp(const App());

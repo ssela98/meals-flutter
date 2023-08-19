@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:meals/models/art.dart';
+import 'package:meals/widgets/art_grid_item.dart';
 
-class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key});
+class ArtsScreen extends StatelessWidget {
+  const ArtsScreen(this.arts, {super.key});
+
+  final List<Art> arts;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pick a Category'),
+        title: const Text('artSay'),
+        centerTitle: true,
       ),
       body: Container(
         margin: const EdgeInsets.all(8),
@@ -18,12 +23,8 @@ class CategoriesScreen extends StatelessWidget {
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
             ),
-            itemCount: 24,
-            itemBuilder: (ctx, i) => Card(
-              child: Center(
-                child: Text('Category $i'),
-              ),
-            ),
+            itemCount: arts.length,
+            itemBuilder: (ctx, i) => ArtGridItem(arts[i]),
           ),
         ),
       ),

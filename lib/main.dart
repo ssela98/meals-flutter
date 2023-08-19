@@ -1,6 +1,8 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/categories_screen.dart';
+import 'package:meals/data/dummy_data.dart';
+import 'package:meals/models/art.dart';
+import 'package:meals/screens/arts.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -10,6 +12,8 @@ final theme = ThemeData(
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
+
+final List<Art> arts = postedArts;
 
 void main() {
   runApp(const App());
@@ -22,7 +26,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: const CategoriesScreen(),
+      home: const ArtsScreen(postedArts),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meals/models/arts/art.dart';
+import 'package:meals/models/comment.dart';
 
 const postedArts = [
   Art(
@@ -197,5 +198,134 @@ const postedArts = [
     artist: 'Pieter Bruegel the Elder',
     category: Category.painting,
     color: Colors.blueGrey,
+  ),
+];
+
+const postedComments = [
+  Comment(
+    id: 'c1',
+    artId: 'a1',
+    poster: 'ssela05',
+    body: 'Oh yeah!',
+  ),
+  Comment(
+      id: 'c2',
+      artId: 'a1',
+      poster: 'maraamayy',
+      body: 'kiss kiss as Tarkan would say'),
+  Comment(
+    id: 'c3',
+    artId: 'a1',
+    poster: 'cito',
+    body: 'Wow! I love kissing!',
+  ),
+  Comment(
+    id: 'c4',
+    artId: 'a3',
+    poster: 'ssela98',
+    body: 'could be nicer',
+  ),
+  Comment(
+    id: 'c5',
+    artId: 'a4',
+    poster: 'maraamayy',
+    body: '@ssela98 I disagree, I think it\'s beautiful!',
+  ),
+  Comment(
+    id: 'c6',
+    artId: 'a7',
+    poster: 'maraamayy',
+    body: '.... okay?',
+  ),
+  Comment(
+    id: 'c7',
+    artId: 'a7',
+    poster: 'ssela05',
+    body: '@maraamayy :D',
+  ),
+  Comment(
+    id: 'c8',
+    artId: 'a11',
+    poster: 'ssela98',
+    body: 'what does this mean?',
+  ),
+  Comment(
+    id: 'c9',
+    artId: 'a12',
+    poster: 'maraamayy',
+    body: 'haha',
+  ),
+  Comment(
+    id: 'c10',
+    artId: 'a12',
+    poster: 'maraamayy',
+    body: '@maraamayy I meant ha ha ha...',
+  ),
+  Comment(
+    id: 'c11',
+    artId: 'a12',
+    poster: 'ssela98',
+    body: 'this is blowing up',
+  ),
+  Comment(
+    id: 'c12',
+    artId: 'a12',
+    poster: 'ssela98',
+    body: '@maraamayy lol',
+  ),
+  Comment(
+      id: 'c13',
+      artId: 'a12',
+      poster: 'ssela05',
+      body: 'get off my lawn kids!'),
+  Comment(
+    id: 'c14',
+    artId: 'a12',
+    poster: 'cito',
+    body: 'I love this!',
+  ),
+  Comment(
+    id: 'c15',
+    artId: 'a15',
+    poster: 'ssela05',
+    body: 'eeeeeehhhh',
+  ),
+  Comment(
+    id: 'c16',
+    artId: 'a15',
+    poster: 'ssela05',
+    body: 'I\'m not sure',
+  ),
+  Comment(
+      id: 'c17',
+      artId: 'a16',
+      poster: 'newuser1234',
+      body: 'CHECK OUT MY WEBSITE <spam>'),
+  Comment(
+      id: 'c18',
+      artId: 'a18',
+      poster: 'somebodyoncetoldme',
+      body: 'why is this here?'),
+  Comment(
+      id: 'c19',
+      artId: 'a18',
+      poster: 'exuser222',
+      body: '@somebodyoncetoldme just report man'),
+  Comment(
+    id: 'c20',
+    artId: 'a19',
+    poster: 'ssela98',
+    body: 'WELCOME BACK!',
+  ),
+  Comment(
+      id: 'c21',
+      artId: 'a19',
+      poster: 'ssela05',
+      body: '@ssela98 haha your username is almost like mine'),
+  Comment(
+    id: 'c22',
+    artId: 'a19',
+    poster: 'ssela98',
+    body: 'oh wow true hah',
   ),
 ];

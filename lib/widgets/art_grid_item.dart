@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:meals/models/art.dart';
+import 'package:meals/models/arts/art.dart';
 
 class ArtGridItem extends StatelessWidget {
   const ArtGridItem(this.art, {super.key});
@@ -42,6 +42,7 @@ class ArtGridItem extends StatelessWidget {
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       Random().nextInt(999).toString(),
@@ -55,6 +56,7 @@ class ArtGridItem extends StatelessWidget {
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       Random().nextInt(999).toString(),

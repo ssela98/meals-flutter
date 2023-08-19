@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals/models/art.dart';
+import 'package:meals/models/arts/art.dart';
 import 'package:meals/widgets/art_grid_item.dart';
 
 class ArtsScreen extends StatelessWidget {

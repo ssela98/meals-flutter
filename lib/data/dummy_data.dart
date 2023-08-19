@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meals/models/art.dart';
+import 'package:meals/models/arts/art.dart';
+import 'package:meals/models/arts/enums/category.dart';
 
 const postedArts = [
   Art(
@@ -10,6 +11,7 @@ const postedArts = [
     artist: 'Gustav Klimt',
     description:
         'The Kiss (German: Der Kuss) is an oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt. It was painted at some point in 1907 and 1908, during the height of what scholars call his "Golden Period". It was exhibited in 1908 under the title Liebespaar (the lovers) as stated in the catalogue of the exhibition.',
+    category: ArtCategory.painting,
     color: Colors.amber,
   ),
   Art(
@@ -20,6 +22,7 @@ const postedArts = [
       artist: 'Albrecht Dürer',
       description:
           'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
+      category: ArtCategory.painting,
       color: Colors.brown),
   Art(
     id: 'a3',
@@ -30,6 +33,7 @@ const postedArts = [
     artist: 'Pieter Bruegel the Elder',
     description:
         'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
+    category: ArtCategory.painting,
     color: Colors.blueGrey,
   ),
   Art(
@@ -39,6 +43,7 @@ const postedArts = [
     location: 'Stadtpark, Parkring 1, 1010 Vienna, Austria',
     artist: 'Edmund Hellmer',
     description: 'Well deserved statue!',
+    category: ArtCategory.statue,
     color: Colors.amber,
   ),
   Art(
@@ -48,6 +53,7 @@ const postedArts = [
     location: 'Donaukanal, 1030 Vienna, Austria',
     artist: 'Vienna',
     description: 'too beautiful not to post',
+    category: ArtCategory.photography,
     color: Colors.blue,
   ),
   Art(
@@ -57,6 +63,7 @@ const postedArts = [
     location: 'somewhere in, 1010 Vienna, Austria',
     artist: 'me',
     description: 'I made this',
+    category: ArtCategory.painting,
     color: Colors.pink,
   ),
   Art(
@@ -65,17 +72,20 @@ const postedArts = [
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
     artist: 'Gustav Klimt',
+    category: ArtCategory.painting,
     color: Colors.amber,
   ),
   Art(
-      id: 'a8',
-      poster: 'ssela98',
-      title: 'Young Hare',
-      location: 'Albertina Pl. 1, 1010 Vienna, Austria',
-      artist: 'Albrecht Dürer',
-      description:
-          'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
-      color: Colors.brown),
+    id: 'a8',
+    poster: 'ssela98',
+    title: 'Young Hare',
+    location: 'Albertina Pl. 1, 1010 Vienna, Austria',
+    artist: 'Albrecht Dürer',
+    description:
+        'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
+    category: ArtCategory.painting,
+    color: Colors.brown,
+  ),
   Art(
     id: 'a9',
     poster: 'ssela98',
@@ -85,6 +95,7 @@ const postedArts = [
     artist: 'Pieter Bruegel the Elder',
     description:
         'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
+    category: ArtCategory.painting,
     color: Colors.blueGrey,
   ),
   Art(
@@ -94,6 +105,7 @@ const postedArts = [
     location: 'Stadtpark, Parkring 1, 1010 Vienna, Austria',
     artist: 'Edmund Hellmer',
     description: 'Well deserved statue!',
+    category: ArtCategory.sculpture,
     color: Colors.amber,
   ),
   Art(
@@ -103,6 +115,7 @@ const postedArts = [
     location: 'Donaukanal, 1030 Vienna, Austria',
     artist: 'Vienna',
     description: 'too beautiful not to post',
+    category: ArtCategory.photography,
     color: Colors.blue,
   ),
   Art(
@@ -112,6 +125,7 @@ const postedArts = [
     location: 'somewhere in, 1010 Vienna, Austria',
     artist: 'me',
     description: 'I made this',
+    category: ArtCategory.sculpture,
     color: Colors.pink,
   ),
   Art(
@@ -123,6 +137,7 @@ const postedArts = [
     artist: 'Pieter Bruegel the Elder',
     description:
         'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
+    category: ArtCategory.painting,
     color: Colors.blueGrey,
   ),
   Art(
@@ -132,6 +147,7 @@ const postedArts = [
     location: 'Stadtpark, Parkring 1, 1010 Vienna, Austria',
     artist: 'Edmund Hellmer',
     description: 'Well deserved statue!',
+    category: ArtCategory.statue,
     color: Colors.amber,
   ),
   Art(
@@ -141,6 +157,7 @@ const postedArts = [
     location: 'Donaukanal, 1030 Vienna, Austria',
     artist: 'Vienna',
     description: 'too beautiful not to post',
+    category: ArtCategory.painting,
     color: Colors.blue,
   ),
   Art(
@@ -149,6 +166,7 @@ const postedArts = [
     title: 'my artwork',
     location: 'somewhere in, 1010 Vienna, Austria',
     artist: 'me',
+    category: ArtCategory.photography,
     color: Colors.pink,
   ),
   Art(
@@ -157,17 +175,20 @@ const postedArts = [
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
     artist: 'Gustav Klimt',
+    category: ArtCategory.painting,
     color: Colors.amber,
   ),
   Art(
-      id: 'a18',
-      poster: 'ssela98',
-      title: 'Young Hare',
-      location: 'Albertina Pl. 1, 1010 Vienna, Austria',
-      artist: 'Albrecht Dürer',
-      description:
-          'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
-      color: Colors.brown),
+    id: 'a18',
+    poster: 'ssela98',
+    title: 'Young Hare',
+    location: 'Albertina Pl. 1, 1010 Vienna, Austria',
+    artist: 'Albrecht Dürer',
+    description:
+        'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
+    category: ArtCategory.painting,
+    color: Colors.brown,
+  ),
   Art(
     id: 'a19',
     poster: 'ssela98',
@@ -175,6 +196,7 @@ const postedArts = [
     location:
         'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
     artist: 'Pieter Bruegel the Elder',
+    category: ArtCategory.painting,
     color: Colors.blueGrey,
   ),
 ];

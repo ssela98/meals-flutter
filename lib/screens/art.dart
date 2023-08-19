@@ -48,16 +48,36 @@ class ArtScreen extends StatelessWidget {
             child:
                 Text(art.title, style: Theme.of(context).textTheme.titleMedium),
           ),
-          Wrap(direction: Axis.vertical, children: [
-            Text(
-              art.artist,
-              style: Theme.of(context).textTheme.headlineLarge,
-            ),
-            Text(
-              art.location,
-              style: Theme.of(context).textTheme.headlineLarge,
-            ),
-          ]),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: const EdgeInsets.only(bottom: 8),
+                child: Text(
+                  art.artist,
+                  style: Theme.of(context).textTheme.headlineLarge,
+                ),
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(right: 8),
+                    child: const Icon(
+                      Icons.location_on_rounded,
+                      size: 32,
+                    ),
+                  ),
+                  Expanded(
+                    child: Text(
+                      art.location,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
           if (art.description != null)
             Container(
               margin: const EdgeInsets.only(top: 24),
@@ -66,6 +86,7 @@ class ArtScreen extends StatelessWidget {
           Container(
             margin: const EdgeInsets.symmetric(vertical: 8),
             child: Text(
+              //'said @${art.poster} at ${dateFormatter.format(art.timestamp)}',
               'said @${art.poster} at ${dateFormatter.format(art.timestamp)}',
               style: Theme.of(context).textTheme.headlineSmall,
             ),

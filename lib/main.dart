@@ -27,17 +27,17 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: theme.copyWith(
         textTheme: GoogleFonts.latoTextTheme().copyWith(
-          titleLarge: Theme.of(context).textTheme.titleLarge!.copyWith(
-                fontSize: 36,
+          titleMedium: Theme.of(context).textTheme.titleMedium!.copyWith(
+                fontSize: 32,
                 fontWeight: FontWeight.w700,
                 color: theme.colorScheme.onBackground,
               ),
-          titleMedium: Theme.of(context).textTheme.titleMedium!.copyWith(
+          titleSmall: Theme.of(context).textTheme.titleSmall!.copyWith(
                 fontSize: 24,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w700,
                 color: theme.colorScheme.onBackground,
               ),
-          bodyLarge: Theme.of(context).textTheme.bodyLarge!.copyWith(
+          headlineLarge: Theme.of(context).textTheme.headlineLarge!.copyWith(
                 fontSize: 20,
                 fontWeight: FontWeight.normal,
                 color: theme.colorScheme.onBackground,

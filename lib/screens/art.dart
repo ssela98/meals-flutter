@@ -36,16 +36,16 @@ class ArtScreen extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 16),
             child:
-                Text(art.title, style: Theme.of(context).textTheme.titleLarge),
+                Text(art.title, style: Theme.of(context).textTheme.titleMedium),
           ),
           Wrap(direction: Axis.vertical, children: [
             Text(
               art.artist,
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
             Text(
               art.location,
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
           ]),
           Container(
@@ -60,7 +60,7 @@ class ArtScreen extends StatelessWidget {
             margin: const EdgeInsets.only(top: 32, bottom: 24),
             child: Text(
               'Comments',
-              style: Theme.of(context).textTheme.titleMedium,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
           ...comments.isEmpty

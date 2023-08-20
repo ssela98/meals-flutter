@@ -41,15 +41,20 @@ class App extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 color: theme.colorScheme.onBackground,
               ),
+          headlineSmall: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                fontSize: 16,
+                fontWeight: FontWeight.normal,
+                color: theme.colorScheme.onBackground.withOpacity(0.5),
+              ),
           bodyMedium: Theme.of(context).textTheme.bodyMedium!.copyWith(
                 fontSize: 16,
                 fontWeight: FontWeight.normal,
                 color: theme.colorScheme.onBackground,
               ),
-          headlineSmall: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                fontSize: 16,
+          bodySmall: Theme.of(context).textTheme.bodySmall!.copyWith(
+                fontSize: 14,
                 fontWeight: FontWeight.normal,
-                color: theme.colorScheme.onBackground.withOpacity(0.5),
+                color: theme.colorScheme.onBackground,
               ),
         ),
       ),

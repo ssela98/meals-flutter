@@ -21,65 +21,60 @@ class ArtGridItem extends StatelessWidget {
       splashColor: Theme.of(context).primaryColor,
       borderRadius: borderRadius,
       child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              art.color.withOpacity(0.8),
-              art.color.withOpacity(0.2),
-            ],
-          ),
-          borderRadius: borderRadius,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        padding: const EdgeInsets.all(8),
+        child: Stack(
           children: [
-            Expanded(
-              child: Text(
-                art.description ?? '',
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      color: Theme.of(context).colorScheme.onBackground,
-                      overflow: TextOverflow.fade,
-                    ),
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 80),
                 Expanded(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        Random().nextInt(999).toString(),
-                        style: TextStyle(
-                            color: Theme.of(context).colorScheme.onBackground),
-                      ),
-                      const Icon(Icons.arrow_upward_rounded),
-                    ],
+                  child: Text(
+                    art.description ?? '',
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                          color: Theme.of(context).colorScheme.onBackground,
+                          overflow: TextOverflow.fade,
+                        ),
                   ),
                 ),
-                Expanded(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        postedComments
-                            .where((comment) => comment.artId == art.id)
-                            .length
-                            .toString(),
-                        style: TextStyle(
-                            color: Theme.of(context).colorScheme.onBackground),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            Random().nextInt(999).toString(),
+                            style: TextStyle(
+                                color:
+                                    Theme.of(context).colorScheme.onBackground),
+                          ),
+                          const Icon(Icons.arrow_upward_rounded),
+                        ],
                       ),
-                      const Icon(Icons.chat_rounded),
-                    ],
-                  ),
-                )
+                    ),
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            postedComments
+                                .where((comment) => comment.artId == art.id)
+                                .length
+                                .toString(),
+                            style: TextStyle(
+                                color:
+                                    Theme.of(context).colorScheme.onBackground),
+                          ),
+                          const Icon(Icons.chat_rounded),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ],
             ),
           ],

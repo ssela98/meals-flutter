@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:meals/data/dummy_data.dart';
 import 'package:meals/models/arts/art.dart';
 import 'package:meals/screens/art.dart';
 import 'package:meals/widgets/art_grid_item.dart';
@@ -12,7 +13,12 @@ class ArtsScreen extends StatelessWidget {
   void _onArtTap(BuildContext context, Art art) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (ctx) => ArtScreen(art: art),
+        builder: (ctx) => ArtScreen(
+          art: art,
+          comments: postedComments
+              .where((comment) => comment.artId == art.id)
+              .toList(),
+        ),
       ),
     );
   }

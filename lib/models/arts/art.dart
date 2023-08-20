@@ -17,6 +17,7 @@ class Art {
     this.description,
     this.category,
     this.color = Colors.orange,
+    this.imageUrl,
   });
 
   final String id;
@@ -27,5 +28,6 @@ class Art {
   final String? description;
   final Category? category;
   final Color color;
+  final String? imageUrl;
   final DateTime timestamp = DateTime.now();
 }

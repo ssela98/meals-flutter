@@ -13,17 +13,22 @@ final postedArts = [
         'The Kiss (German: Der Kuss) is an oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt. It was painted at some point in 1907 and 1908, during the height of what scholars call his "Golden Period". It was exhibited in 1908 under the title Liebespaar (the lovers) as stated in the catalogue of the exhibition.',
     category: Category.painting,
     color: Colors.amber,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg',
   ),
   Art(
-      id: 'a2',
-      poster: 'ssela98',
-      title: 'Young Hare',
-      location: 'Albertina Pl. 1, 1010 Vienna, Austria',
-      artist: 'Albrecht Dürer',
-      description:
-          'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
-      category: Category.painting,
-      color: Colors.brown),
+    id: 'a2',
+    poster: 'ssela98',
+    title: 'Young Hare',
+    location: 'Albertina Pl. 1, 1010 Vienna, Austria',
+    artist: 'Albrecht Dürer',
+    description:
+        'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
+    category: Category.painting,
+    color: Colors.brown,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/4/44/Albrecht_D%C3%BCrer_-_Hare%2C_1502_-_Google_Art_Project.jpg',
+  ),
   Art(
     id: 'a3',
     poster: 'ssela98',
@@ -31,10 +36,11 @@ final postedArts = [
     location:
         'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
     artist: 'Pieter Bruegel the Elder',
-    description:
-        'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
+    description: 'This was the building process...',
     category: Category.painting,
     color: Colors.blueGrey,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/3/3e/Building_of_Babel.jpg',
   ),
   Art(
     id: 'a4',
@@ -45,6 +51,8 @@ final postedArts = [
     description: 'Well deserved statue!',
     category: Category.statue,
     color: Colors.amber,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/1/17/Stadtpark_Johann_Strau%C3%9F_Denkmal.jpg',
   ),
   Art(
     id: 'a5',
@@ -52,9 +60,11 @@ final postedArts = [
     title: 'just Donaukanal',
     location: 'Donaukanal, 1030 Vienna, Austria',
     artist: 'Vienna',
-    description: 'too beautiful not to post',
+    description: 'Worth a visit!',
     category: Category.photography,
     color: Colors.blue,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/b/b2/Donaukanal_vom_Ringturm_sued.jpg',
   ),
   Art(
     id: 'a6',
@@ -65,6 +75,7 @@ final postedArts = [
     description: 'I made this',
     category: Category.painting,
     color: Colors.pink,
+    imageUrl: 'https://i.imgur.com/tdiyJR9.png',
   ),
   Art(
     id: 'a7',
@@ -74,6 +85,8 @@ final postedArts = [
     artist: 'Gustav Klimt',
     category: Category.painting,
     color: Colors.amber,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gustav_Klimt_031.jpg/1024px-Gustav_Klimt_031.jpg',
   ),
   Art(
     id: 'a8',
@@ -85,6 +98,8 @@ final postedArts = [
         'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
     category: Category.painting,
     color: Colors.brown,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/6/6a/Hase_%28Hans_Hofmann%29.jpg',
   ),
   Art(
     id: 'a9',
@@ -93,10 +108,11 @@ final postedArts = [
     location:
         'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
     artist: 'Pieter Bruegel the Elder',
-    description:
-        'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
+    description: 'The background :)',
     category: Category.painting,
     color: Colors.blueGrey,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/a/ae/Hanging_Gardens_of_Babylon.jpg',
   ),
   Art(
     id: 'a10',
@@ -107,6 +123,8 @@ final postedArts = [
     description: 'Well deserved statue!',
     category: Category.sculpture,
     color: Colors.amber,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/d/d2/EuroVizion_-_Johann_Strauss_Monument_in_Stadt_Park%2C_Vienna_1987.jpg',
   ),
   Art(
     id: 'a11',
@@ -117,16 +135,18 @@ final postedArts = [
     description: 'too beautiful not to post',
     category: Category.photography,
     color: Colors.blue,
+    imageUrl:
+        'https://www.wien.info/resource/image/290968/Hero-Header/2835/1050/7b525313cf1103992238d65f21f48d19/B5D7716D97D08DF1516C0EBFF8908440/41001-badeschiff-donaukanal-sommer-outdoor.webp',
   ),
   Art(
     id: 'a12',
     poster: 'maraamayy',
-    title: 'my artwork',
+    title: 'can you recognise the band?',
     location: 'somewhere in, 1010 Vienna, Austria',
-    artist: 'me',
-    description: 'I made this',
+    artist: '@maraamayy',
     category: Category.sculpture,
     color: Colors.pink,
+    imageUrl: 'https://i.imgur.com/7S5ihfb.png',
   ),
   Art(
     id: 'a13',
@@ -139,6 +159,8 @@ final postedArts = [
         'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
     category: Category.painting,
     color: Colors.blueGrey,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/5/50/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project.jpg',
   ),
   Art(
     id: 'a14',
@@ -149,6 +171,8 @@ final postedArts = [
     description: 'Well deserved statue!',
     category: Category.statue,
     color: Colors.amber,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/3/3b/JohannStrauss_02.jpg',
   ),
   Art(
     id: 'a15',
@@ -156,18 +180,20 @@ final postedArts = [
     title: 'just Donaukanal',
     location: 'Donaukanal, 1030 Vienna, Austria',
     artist: 'Vienna',
-    description: 'too beautiful not to post',
-    category: Category.painting,
+    description: 'was playing around with some metal',
+    category: Category.sculpture,
     color: Colors.blue,
+    imageUrl: 'https://i.imgur.com/iQJZusK.png',
   ),
   Art(
     id: 'a16',
     poster: 'maraamayy',
-    title: 'my artwork',
+    title: 'imagining myself',
     location: 'somewhere in, 1010 Vienna, Austria',
-    artist: 'me',
+    artist: '@maraamayy',
     category: Category.photography,
     color: Colors.pink,
+    imageUrl: 'https://i.imgur.com/cN2RwJs.png',
   ),
   Art(
     id: 'a17',
@@ -177,6 +203,7 @@ final postedArts = [
     artist: 'Gustav Klimt',
     category: Category.painting,
     color: Colors.amber,
+    imageUrl: 'https://www.gustav-klimt.com/images/kiss-museum-photo.jpg',
   ),
   Art(
     id: 'a18',
@@ -188,6 +215,8 @@ final postedArts = [
         'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
     category: Category.painting,
     color: Colors.brown,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/6/6a/Hase_%28Hans_Hofmann%29.jpg',
   ),
   Art(
     id: 'a19',
@@ -198,6 +227,19 @@ final postedArts = [
     artist: 'Pieter Bruegel the Elder',
     category: Category.painting,
     color: Colors.blueGrey,
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/5/50/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project.jpg',
+  ),
+  Art(
+    id: 'a20',
+    poster: 'ssela98',
+    title: 'The Kiss',
+    location: 'Am Belvedere 1, 1040 Vienna, Austria',
+    artist: '@ssela98',
+    description: 'just got inspired, what do you folks think?',
+    category: Category.painting,
+    color: Colors.amber,
+    imageUrl: 'https://i.imgur.com/C6kLvdu.png',
   ),
 ];
 

@@ -19,19 +19,6 @@ final postedArts = [
   Art(
     id: 'a2',
     poster: 'ssela98',
-    title: 'Young Hare',
-    location: 'Albertina Pl. 1, 1010 Vienna, Austria',
-    artist: 'Albrecht Dürer',
-    description:
-        'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
-    category: Category.painting,
-    color: Colors.brown,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/4/44/Albrecht_D%C3%BCrer_-_Hare%2C_1502_-_Google_Art_Project.jpg',
-  ),
-  Art(
-    id: 'a3',
-    poster: 'ssela98',
     title: 'The (Great) Tower of Babel',
     location:
         'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
@@ -43,7 +30,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/3/3e/Building_of_Babel.jpg',
   ),
   Art(
-    id: 'a4',
+    id: 'a3',
     poster: 'maraamayy',
     title: 'Johann Strauss Monument',
     location: 'Stadtpark, Parkring 1, 1010 Vienna, Austria',
@@ -55,7 +42,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/1/17/Stadtpark_Johann_Strau%C3%9F_Denkmal.jpg',
   ),
   Art(
-    id: 'a5',
+    id: 'a4',
     poster: 'ssela98',
     title: 'just Donaukanal',
     location: 'Donaukanal, 1030 Vienna, Austria',
@@ -67,7 +54,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/b/b2/Donaukanal_vom_Ringturm_sued.jpg',
   ),
   Art(
-    id: 'a6',
+    id: 'a5',
     poster: 'maraamayy',
     title: 'my artwork',
     location: 'somewhere in, 1010 Vienna, Austria',
@@ -75,10 +62,11 @@ final postedArts = [
     description: 'I made this',
     category: Category.painting,
     color: Colors.pink,
-    imageUrl: 'https://i.imgur.com/tdiyJR9.png',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/1/17/Stadtpark_Johann_Strau%C3%9F_Denkmal.jpg',
   ),
   Art(
-    id: 'a7',
+    id: 'a6',
     poster: 'ssela98',
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
@@ -89,7 +77,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gustav_Klimt_031.jpg/1024px-Gustav_Klimt_031.jpg',
   ),
   Art(
-    id: 'a8',
+    id: 'a7',
     poster: 'ssela98',
     title: 'Young Hare',
     location: 'Albertina Pl. 1, 1010 Vienna, Austria',
@@ -102,20 +90,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/6/6a/Hase_%28Hans_Hofmann%29.jpg',
   ),
   Art(
-    id: 'a9',
-    poster: 'ssela98',
-    title: 'The (Great) Tower of Babel',
-    location:
-        'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
-    artist: 'Pieter Bruegel the Elder',
-    description: 'The background :)',
-    category: Category.painting,
-    color: Colors.blueGrey,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/a/ae/Hanging_Gardens_of_Babylon.jpg',
-  ),
-  Art(
-    id: 'a10',
+    id: 'a8',
     poster: 'maraamayy',
     title: 'Johann Strauss Monument',
     location: 'Stadtpark, Parkring 1, 1010 Vienna, Austria',
@@ -127,7 +102,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/d/d2/EuroVizion_-_Johann_Strauss_Monument_in_Stadt_Park%2C_Vienna_1987.jpg',
   ),
   Art(
-    id: 'a11',
+    id: 'a9',
     poster: 'ssela98',
     title: 'just Donaukanal',
     location: 'Donaukanal, 1030 Vienna, Austria',
@@ -136,34 +111,21 @@ final postedArts = [
     category: Category.photography,
     color: Colors.blue,
     imageUrl:
-        'https://www.wien.info/resource/image/290968/Hero-Header/2835/1050/7b525313cf1103992238d65f21f48d19/B5D7716D97D08DF1516C0EBFF8908440/41001-badeschiff-donaukanal-sommer-outdoor.webp',
+        'https://upload.wikimedia.org/wikipedia/commons/1/17/Stadtpark_Johann_Strau%C3%9F_Denkmal.jpg',
   ),
   Art(
-    id: 'a12',
+    id: 'a10',
     poster: 'maraamayy',
     title: 'can you recognise the band?',
     location: 'somewhere in, 1010 Vienna, Austria',
     artist: '@maraamayy',
     category: Category.sculpture,
     color: Colors.pink,
-    imageUrl: 'https://i.imgur.com/7S5ihfb.png',
-  ),
-  Art(
-    id: 'a13',
-    poster: 'ssela98',
-    title: 'The (Great) Tower of Babel',
-    location:
-        'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
-    artist: 'Pieter Bruegel the Elder',
-    description:
-        'The Tower of Babel was the subject of three paintings by Pieter Bruegel the Elder. The first, a miniature painted on ivory, was painted while Bruegel was in Rome and is now lost.',
-    category: Category.painting,
-    color: Colors.blueGrey,
     imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/5/50/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/1/17/Stadtpark_Johann_Strau%C3%9F_Denkmal.jpg',
   ),
   Art(
-    id: 'a14',
+    id: 'a11',
     poster: 'maraamayy',
     title: 'Johann Strauss Monument',
     location: 'Stadtpark, Parkring 1, 1010 Vienna, Austria',
@@ -175,7 +137,7 @@ final postedArts = [
         'https://upload.wikimedia.org/wikipedia/commons/3/3b/JohannStrauss_02.jpg',
   ),
   Art(
-    id: 'a15',
+    id: 'a12',
     poster: 'ssela98',
     title: 'just Donaukanal',
     location: 'Donaukanal, 1030 Vienna, Austria',
@@ -183,20 +145,22 @@ final postedArts = [
     description: 'was playing around with some metal',
     category: Category.sculpture,
     color: Colors.blue,
-    imageUrl: 'https://i.imgur.com/iQJZusK.png',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/3/3e/Building_of_Babel.jpg',
   ),
   Art(
-    id: 'a16',
+    id: 'a13',
     poster: 'maraamayy',
     title: 'imagining myself',
     location: 'somewhere in, 1010 Vienna, Austria',
     artist: '@maraamayy',
     category: Category.photography,
     color: Colors.pink,
-    imageUrl: 'https://i.imgur.com/cN2RwJs.png',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/3/3e/Building_of_Babel.jpg',
   ),
   Art(
-    id: 'a17',
+    id: 'a14',
     poster: 'ssela98',
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
@@ -206,32 +170,7 @@ final postedArts = [
     imageUrl: 'https://www.gustav-klimt.com/images/kiss-museum-photo.jpg',
   ),
   Art(
-    id: 'a18',
-    poster: 'ssela98',
-    title: 'Young Hare',
-    location: 'Albertina Pl. 1, 1010 Vienna, Austria',
-    artist: 'Albrecht Dürer',
-    description:
-        'Young Hare (German: Feldhase) is a 1502 watercolour and bodycolour painting by German artist Albrecht Dürer. Painted in 1502 in his workshop, it is acknowledged as a masterpiece of observational art alongside his Great Piece of Turf from the following year.',
-    category: Category.painting,
-    color: Colors.brown,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/6/6a/Hase_%28Hans_Hofmann%29.jpg',
-  ),
-  Art(
-    id: 'a19',
-    poster: 'ssela98',
-    title: 'The (Great) Tower of Babel',
-    location:
-        'Kunsthistorisches Museum, Maria-Theresien-Platz, 1010 Vienna, Austria',
-    artist: 'Pieter Bruegel the Elder',
-    category: Category.painting,
-    color: Colors.blueGrey,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/5/50/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project.jpg',
-  ),
-  Art(
-    id: 'a20',
+    id: 'a15',
     poster: 'ssela98',
     title: 'The Kiss',
     location: 'Am Belvedere 1, 1040 Vienna, Austria',
@@ -239,7 +178,8 @@ final postedArts = [
     description: 'just got inspired, what do you folks think?',
     category: Category.painting,
     color: Colors.amber,
-    imageUrl: 'https://i.imgur.com/C6kLvdu.png',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg',
   ),
 ];
 
@@ -341,33 +281,33 @@ final postedComments = [
   ),
   Comment(
       id: 'c17',
-      artId: 'a16',
+      artId: 'a15',
       poster: 'newuser1234',
       body: 'CHECK OUT MY WEBSITE <spam>'),
   Comment(
       id: 'c18',
-      artId: 'a18',
+      artId: 'a12',
       poster: 'somebodyoncetoldme',
       body: 'why is this here?'),
   Comment(
       id: 'c19',
-      artId: 'a18',
+      artId: 'a11',
       poster: 'exuser222',
       body: '@somebodyoncetoldme just report man'),
   Comment(
     id: 'c20',
-    artId: 'a19',
+    artId: 'a13',
     poster: 'ssela98',
     body: 'WELCOME BACK!',
   ),
   Comment(
       id: 'c21',
-      artId: 'a19',
+      artId: 'a1',
       poster: 'ssela05',
       body: '@ssela98 haha your username is almost like mine'),
   Comment(
     id: 'c22',
-    artId: 'a19',
+    artId: 'a9',
     poster: 'ssela98',
     body: 'oh wow true hah',
   ),

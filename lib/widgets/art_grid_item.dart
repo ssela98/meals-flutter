@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:meals/data/dummy_data.dart';
 import 'package:meals/models/arts/art.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class ArtGridItem extends StatelessWidget {
   ArtGridItem(this.art, this.onArtTap, {super.key});
@@ -23,12 +24,21 @@ class ArtGridItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8),
         child: Stack(
+          alignment: Alignment.center,
           children: [
+            FadeInImage(
+              placeholder: MemoryImage(kTransparentImage),
+              image: NetworkImage(art.imageUrl!),
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                const SizedBox(height: 80),
-                Expanded(
+                //const SizedBox(height: 80),
+                ConstrainedBox(
+                  constraints: const BoxConstraints(
+                    maxHeight: 80,
+                  ),
                   child: Text(
                     art.description ?? '',
                     style: Theme.of(context).textTheme.bodySmall!.copyWith(
@@ -37,43 +47,48 @@ class ArtGridItem extends StatelessWidget {
                         ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Expanded(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            Random().nextInt(999).toString(),
-                            style: TextStyle(
-                                color:
-                                    Theme.of(context).colorScheme.onBackground),
-                          ),
-                          const Icon(Icons.arrow_upward_rounded),
-                        ],
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              Random().nextInt(999).toString(),
+                              style: TextStyle(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onBackground),
+                            ),
+                            const Icon(Icons.arrow_upward_rounded),
+                          ],
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            postedComments
-                                .where((comment) => comment.artId == art.id)
-                                .length
-                                .toString(),
-                            style: TextStyle(
-                                color:
-                                    Theme.of(context).colorScheme.onBackground),
-                          ),
-                          const Icon(Icons.chat_rounded),
-                        ],
-                      ),
-                    )
-                  ],
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              postedComments
+                                  .where((comment) => comment.artId == art.id)
+                                  .length
+                                  .toString(),
+                              style: TextStyle(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onBackground),
+                            ),
+                            const Icon(Icons.chat_rounded),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),

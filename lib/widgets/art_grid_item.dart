@@ -29,6 +29,7 @@ class ArtGridItem extends StatelessWidget {
             image: NetworkImage(art.imageUrl!),
           ),
           Container(
+            padding: const EdgeInsets.all(8),
             decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,

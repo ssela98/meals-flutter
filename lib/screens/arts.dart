@@ -23,21 +23,17 @@ class ArtsScreen extends StatelessWidget {
         title: const Text('artSay'),
         centerTitle: true,
       ),
-      body: Container(
-        margin: const EdgeInsets.all(8),
-        child: Center(
-          child: GridView.builder(
-            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 300,
-              crossAxisSpacing: 8,
-              mainAxisSpacing: 8,
-            ),
-            itemCount: arts.length,
-            itemBuilder: (ctx, i) => ArtGridItem(
-              arts[i],
-              _onArtTap,
-            ),
-          ),
+      body: GridView.builder(
+        padding: const EdgeInsets.all(16),
+        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 16,
+          maxCrossAxisExtent: 200,
+        ),
+        itemCount: arts.length,
+        itemBuilder: (ctx, i) => ArtGridItem(
+          arts[i],
+          _onArtTap,
         ),
       ),
     );

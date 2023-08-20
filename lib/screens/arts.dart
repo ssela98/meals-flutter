@@ -27,8 +27,8 @@ class ArtsScreen extends StatelessWidget {
         margin: const EdgeInsets.all(8),
         child: Center(
           child: GridView.builder(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
+            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+              maxCrossAxisExtent: 300,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
             ),

@@ -10,7 +10,8 @@ class ArtScreen extends StatelessWidget {
     required this.art,
     comments,
     super.key,
-  }) : this.comments = comments ?? [];
+    // ignore: unnecessary_this
+  }) : this.comments = comments ?? []; // because it's not unneccessary
 
   final Art art;
   final List<Comment> comments;

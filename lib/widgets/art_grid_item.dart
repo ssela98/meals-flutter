@@ -24,14 +24,17 @@ class ArtGridItem extends StatelessWidget {
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
-          FadeInImage(
-            placeholder: MemoryImage(kTransparentImage),
-            image: NetworkImage(art.imageUrl!),
+          ClipRRect(
+            borderRadius: borderRadius,
+            child: FadeInImage(
+              placeholder: MemoryImage(kTransparentImage),
+              image: NetworkImage(art.imageUrl!),
+            ),
           ),
           Container(
             padding: const EdgeInsets.all(8),
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
@@ -39,6 +42,7 @@ class ArtGridItem extends StatelessWidget {
                   Colors.black,
                 ],
               ),
+              borderRadius: borderRadius,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

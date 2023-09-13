@@ -1,8 +1,7 @@
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/data/dummy_data.dart';
-import 'package:meals/models/arts/art.dart';
-import 'package:meals/screens/arts.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'package:meals/screens/tabs.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -10,9 +9,8 @@ final theme = ThemeData(
     brightness: Brightness.dark,
     seedColor: const Color.fromARGB(255, 131, 57, 0),
   ),
+  textTheme: GoogleFonts.latoTextTheme(),
 );
-
-List<Art> arts = postedArts;
 
 void main() {
   runApp(const App());
@@ -24,41 +22,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: theme.copyWith(
-        textTheme: GoogleFonts.latoTextTheme().copyWith(
-          titleMedium: Theme.of(context).textTheme.titleMedium!.copyWith(
-                fontSize: 32,
-                fontWeight: FontWeight.w700,
-                color: theme.colorScheme.onBackground,
-              ),
-          titleSmall: Theme.of(context).textTheme.titleSmall!.copyWith(
-                fontSize: 24,
-                fontWeight: FontWeight.w700,
-                color: theme.colorScheme.onBackground,
-              ),
-          headlineLarge: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                fontSize: 20,
-                fontWeight: FontWeight.normal,
-                color: theme.colorScheme.onBackground,
-              ),
-          headlineSmall: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                fontSize: 16,
-                fontWeight: FontWeight.normal,
-                color: theme.colorScheme.onBackground.withOpacity(0.5),
-              ),
-          bodyMedium: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                fontSize: 16,
-                fontWeight: FontWeight.normal,
-                color: theme.colorScheme.onBackground,
-              ),
-          bodySmall: Theme.of(context).textTheme.bodySmall!.copyWith(
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-                color: theme.colorScheme.onBackground,
-              ),
-        ),
-      ),
-      home: ArtsScreen(postedArts),
+      theme: theme,
+      home: const TabsScreen(),
     );
   }
 }
